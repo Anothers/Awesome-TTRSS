@@ -57,7 +57,7 @@ RUN mkdir wallabag_v2 && \
 #   curl -sL https://dev.tt-rss.org/tt-rss/ttrss-auth-oidc/archive/master.tar.gz | \
 #   tar xzvpf - --strip-components=1 -C auth_oidc ttrss-auth-oidc-master
 
-ADD ttrss-auth-oidc-master.tar.gz
+ADD ttrss-auth-oidc-master.tar.gz .
 RUN mkdir auth_oidc
 RUN tar xzvpf ttrss-auth-oidc-master.tar.gz - --strip-components=1 -C auth_oidc
 
