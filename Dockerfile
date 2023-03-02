@@ -59,7 +59,7 @@ RUN mkdir wallabag_v2 && \
 
 ADD ttrss-auth-oidc-master.tar.gz /var/www/plugins.local/
 RUN mkdir auth_oidc
-RUN pwd
+RUN ls
 RUN tar xzvpf /var/www/plugins.local/ttrss-auth-oidc-master.tar.gz  --strip-components=1 -C auth_oidc
 
 
